@@ -1,0 +1,10 @@
+{
+  "simulation": "computerdatabase.BasicSimulation",
+  "simulationId": "basicsimulation-20220810055803937",
+  "start": 1660111085765,
+  "description": "ksfsw",
+  "scenarios": ["Scenario Name"],
+  "assertions": [
+
+  ]
+}

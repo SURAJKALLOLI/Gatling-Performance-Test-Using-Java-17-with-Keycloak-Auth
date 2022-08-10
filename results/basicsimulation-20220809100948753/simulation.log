@@ -1,0 +1,80 @@
+RUN	computerdatabase.BasicSimulation	basicsimulation	1660039788753	htf	3.8.2
+ERROR	request_1: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039790060
+USER	scn	START	1660039790066
+ERROR	request_2: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039791075
+ERROR	request_3: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039792076
+ERROR	request_4: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039793084
+ERROR	request_5: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039793084
+ERROR	request_6: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039793086
+ERROR	request_7: Failed to build request: No baseUrl defined but provided url is relative : /entities 	1660039793088
+ERROR	request_8: Failed to build request: No baseUrl defined but provided url is relative : /entityOperations/upsert 	1660039793088
+USER	scn	END	1660039793091
+ERROR	request_1: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039796054
+USER	scn	START	1660039796055
+ERROR	request_2: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039797067
+ERROR	request_3: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039798080
+ERROR	request_4: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039799090
+ERROR	request_5: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039799091
+ERROR	request_6: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039799091
+ERROR	request_7: Failed to build request: No baseUrl defined but provided url is relative : /entities 	1660039799091
+ERROR	request_8: Failed to build request: No baseUrl defined but provided url is relative : /entityOperations/upsert 	1660039799092
+USER	scn	END	1660039799093
+ERROR	request_1: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039802057
+USER	scn	START	1660039802057
+ERROR	request_2: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039803067
+ERROR	request_3: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039804079
+ERROR	request_4: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039805089
+ERROR	request_5: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039805089
+ERROR	request_6: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039805090
+ERROR	request_7: Failed to build request: No baseUrl defined but provided url is relative : /entities 	1660039805092
+ERROR	request_8: Failed to build request: No baseUrl defined but provided url is relative : /entityOperations/upsert 	1660039805092
+USER	scn	END	1660039805093
+ERROR	request_1: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039808060
+USER	scn	START	1660039808060
+ERROR	request_2: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039809068
+ERROR	request_3: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039810081
+ERROR	request_4: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039811092
+ERROR	request_5: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039811093
+ERROR	request_6: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039811094
+ERROR	request_7: Failed to build request: No baseUrl defined but provided url is relative : /entities 	1660039811095
+ERROR	request_8: Failed to build request: No baseUrl defined but provided url is relative : /entityOperations/upsert 	1660039811096
+USER	scn	END	1660039811096
+ERROR	request_1: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039814053
+USER	scn	START	1660039814053
+ERROR	request_2: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039815066
+ERROR	request_3: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039816080
+ERROR	request_4: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039817092
+ERROR	request_5: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039817092
+ERROR	request_6: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039817093
+ERROR	request_7: Failed to build request: No baseUrl defined but provided url is relative : /entities 	1660039817095
+ERROR	request_8: Failed to build request: No baseUrl defined but provided url is relative : /entityOperations/upsert 	1660039817095
+USER	scn	END	1660039817095
+ERROR	request_1: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039820056
+USER	scn	START	1660039820056
+ERROR	request_2: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039821058
+ERROR	request_3: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039822062
+ERROR	request_4: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039823074
+ERROR	request_5: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039823074
+ERROR	request_6: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039823076
+ERROR	request_7: Failed to build request: No baseUrl defined but provided url is relative : /entities 	1660039823083
+ERROR	request_8: Failed to build request: No baseUrl defined but provided url is relative : /entityOperations/upsert 	1660039823083
+USER	scn	END	1660039823084
+ERROR	request_1: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039826060
+USER	scn	START	1660039826061
+ERROR	request_2: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039827073
+ERROR	request_3: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039828087
+ERROR	request_4: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039829098
+ERROR	request_5: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039829099
+ERROR	request_6: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039829100
+ERROR	request_7: Failed to build request: No baseUrl defined but provided url is relative : /entities 	1660039829102
+ERROR	request_8: Failed to build request: No baseUrl defined but provided url is relative : /entityOperations/upsert 	1660039829102
+USER	scn	END	1660039829103
+ERROR	request_1: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039832057
+USER	scn	START	1660039832058
+ERROR	request_2: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039833067
+ERROR	request_3: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039834077
+ERROR	request_4: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039835089
+ERROR	request_5: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039835090
+ERROR	request_6: Failed to build request: No baseUrl defined but provided url is relative : /types 	1660039835091
+ERROR	request_7: Failed to build request: No baseUrl defined but provided url is relative : /entities 	1660039835093
+ERROR	
