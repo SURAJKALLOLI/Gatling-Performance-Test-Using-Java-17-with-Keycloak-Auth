@@ -96,7 +96,7 @@ HttpProtocolBuilder httpProtocol =
               .header("content-type", "application/json")
               .body(RawFileBody("raw2.json")))
           .pause(1);     
-        //   .exec(http("request_9").delete("/entities/urn:ngsi-ld:Test-Building1158"));
+          .exec(http("request_9").delete("/entities/urn:ngsi-ld:Test-Building1158"));
                   // // Here's an example of a POST request
                   // .post("/entities")
                   // // Note the triple double quotes: used in Scala for protecting a whole chain of
@@ -107,7 +107,7 @@ HttpProtocolBuilder httpProtocol =
                   // .formParam("type", "https://uri.fiware.org/ns/data-models#Building%25"));
 
   {
-    setUp(scn.injectOpen(rampUsers(100).during(Duration.ofMinutes(10))))
+    setUp(scn.injectOpen(rampUsers(200).during(Duration.ofMinutes(10))))
       .maxDuration(Duration.ofMinutes(20)).protocols(httpProtocol);
   }
 }
