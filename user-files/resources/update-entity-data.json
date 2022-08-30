@@ -1,5 +1,5 @@
 [{
-    "id": "urn:ngsi-ld:Test-Building1161",
+    "id": "urn:ngsi-ld:Gatling-Test-Building",
     "type": "https://uri.fiware.org/ns/data-models#Building",
     "category": {
         "type": "Property",
@@ -27,6 +27,6 @@
     },
     "temperature": {
         "type": "Property",
-        "value": "28"
+        "value": "32"
     }
 }]

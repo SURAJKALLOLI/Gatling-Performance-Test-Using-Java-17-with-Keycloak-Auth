@@ -16,7 +16,7 @@
 <script src="js/highcharts-more.js"></script>
 <script src="js/theme.js"></script>
 <script src="js/unpack.js"></script>
-<title>Gatling Stats - request_3</title>
+<title>Gatling Stats - POST - Create New Entity</title>
 </head>
 <body>
 <div class="app-container">
@@ -145,28 +145,6 @@
                         </div>
 
 </div>
-<div class="statistics extensible-geant collapsed">
-    <div class="title">
-        Errors
-    </div>
-    <table id="container_errors" class="statistics-in extensible-geant">
-        <thead>
-            <tr>
-                <th id="error-col-1" class="header sortable"><span>Error</span></th>
-                <th id="error-col-2" class="header sortable"><span>Count</span></th>
-                <th id="error-col-3" class="header sortable"><span>Percentage</span></th>
-            </tr>
-        </thead>
-		<tbody>
-		    
-		    <tr>
-		    	<td class="error-col-1 total ko">status.find.in([200, 209], 304), found 401<span class="value" style="display:none">0</span></td>
-		    	<td class="value error-col-2 total ko">2</td>
-		    	<td class="value error-col-3 total ko">100 %</td>
-		    </tr>
-		</tbody>
-    </table>
-</div>
 
             <div class="schema geant">
               <div id="responsetimeDistributionContainer" class="geant"></div>
@@ -195,7 +173,7 @@
     </div>
 </div>
 <script>
-    var pageStats = stats.contents['req_request-3-d0973'].stats;
+    var pageStats = stats.contents['req_post---create-n-5db71'].stats;
     $(document).ready(function() {
         $('.simulation-tooltip').popover({trigger:'hover', placement:'left'});
         setDetailsLinkUrl();
@@ -324,7 +302,7 @@ var responsetimeDistributionChart = new Highcharts.Chart({
     maskInside: false
   },
   xAxis: {
-    categories: ['160', '166'],
+    categories: ['215'],
     tickInterval: 20
   },
   yAxis: {
@@ -352,7 +330,7 @@ type: 'column',
 color: '#68b65c',
 name: 'OK',
 data: [
-  
+  100.0
 ],
 tooltip: { yDecimals: 0, ySuffix: 'ms' }
 },
@@ -361,7 +339,7 @@ type: 'column',
 color: '#f15b4f',
 name: 'KO',
 data: [
-  50.0,50.0
+  
 ],
 tooltip: { yDecimals: 0, ySuffix: 'ms' }
 }
@@ -373,7 +351,7 @@ responsetimeDistributionChart.setTitle({
   useHTML: true
 });
 
-var responsetimepercentilesovertimeokPercentiles = unpack([[1661853966,null],[1661853967,null],[1661853968,null],[1661853969,null],[1661853970,null],[1661853971,null],[1661853972,null],[1661853973,null],[1661853974,null],[1661853975,null],[1661853976,null],[1661853977,null],[1661853978,null],[1661853979,null],[1661853980,null],[1661853981,null],[1661853982,null],[1661853983,null],[1661853984,null],[1661853985,null],[1661853986,null],[1661853987,null],[1661853988,null],[1661853989,null],[1661853990,null],[1661853991,null],[1661853992,null],[1661853993,null],[1661853994,null],[1661853995,null],[1661853996,null],[1661853997,null],[1661853998,null],[1661853999,null],[1661854000,null],[1661854001,null],[1661854002,null],[1661854003,null],[1661854004,null]]);
+var responsetimepercentilesovertimeokPercentiles = unpack([[1661859645,null],[1661859646,null],[1661859647,[215,215,215,215,215,215,215,215,215,215]],[1661859648,null],[1661859649,null]]);
 
 var responsetimepercentilesovertimeokPercentilesChart = new Highcharts.StockChart({
   chart: {
@@ -570,7 +548,7 @@ responsetimepercentilesovertimeokPercentilesChart.setTitle({
   useHTML: true
 });
 
-var requests = unpack([[1661853966,[0,0,0]],[1661853967,[0,0,0]],[1661853968,[0,0,0]],[1661853969,[1,0,1]],[1661853970,[0,0,0]],[1661853971,[0,0,0]],[1661853972,[0,0,0]],[1661853973,[0,0,0]],[1661853974,[0,0,0]],[1661853975,[0,0,0]],[1661853976,[0,0,0]],[1661853977,[0,0,0]],[1661853978,[0,0,0]],[1661853979,[0,0,0]],[1661853980,[0,0,0]],[1661853981,[0,0,0]],[1661853982,[0,0,0]],[1661853983,[0,0,0]],[1661853984,[0,0,0]],[1661853985,[0,0,0]],[1661853986,[0,0,0]],[1661853987,[0,0,0]],[1661853988,[0,0,0]],[1661853989,[0,0,0]],[1661853990,[0,0,0]],[1661853991,[0,0,0]],[1661853992,[0,0,0]],[1661853993,[0,0,0]],[1661853994,[0,0,0]],[1661853995,[0,0,0]],[1661853996,[0,0,0]],[1661853997,[0,0,0]],[1661853998,[0,0,0]],[1661853999,[1,0,1]],[1661854000,[0,0,0]],[1661854001,[0,0,0]],[1661854002,[0,0,0]],[1661854003,[0,0,0]],[1661854004,[0,0,0]]]);
+var requests = unpack([[1661859645,[0,0,0]],[1661859646,[0,0,0]],[1661859647,[1,1,0]],[1661859648,[0,0,0]],[1661859649,[0,0,0]]]);
 
 var requestsChart = new Highcharts.StockChart({
   chart: {
@@ -681,7 +659,7 @@ requestsChart.setTitle({
   useHTML: true
 });
 
-var responses = unpack([[1661853966,[0,0,0]],[1661853967,[0,0,0]],[1661853968,[0,0,0]],[1661853969,[1,0,1]],[1661853970,[0,0,0]],[1661853971,[0,0,0]],[1661853972,[0,0,0]],[1661853973,[0,0,0]],[1661853974,[0,0,0]],[1661853975,[0,0,0]],[1661853976,[0,0,0]],[1661853977,[0,0,0]],[1661853978,[0,0,0]],[1661853979,[0,0,0]],[1661853980,[0,0,0]],[1661853981,[0,0,0]],[1661853982,[0,0,0]],[1661853983,[0,0,0]],[1661853984,[0,0,0]],[1661853985,[0,0,0]],[1661853986,[0,0,0]],[1661853987,[0,0,0]],[1661853988,[0,0,0]],[1661853989,[0,0,0]],[1661853990,[0,0,0]],[1661853991,[0,0,0]],[1661853992,[0,0,0]],[1661853993,[0,0,0]],[1661853994,[0,0,0]],[1661853995,[0,0,0]],[1661853996,[0,0,0]],[1661853997,[0,0,0]],[1661853998,[0,0,0]],[1661853999,[1,0,1]],[1661854000,[0,0,0]],[1661854001,[0,0,0]],[1661854002,[0,0,0]],[1661854003,[0,0,0]],[1661854004,[0,0,0]]]);
+var responses = unpack([[1661859645,[0,0,0]],[1661859646,[0,0,0]],[1661859647,[1,1,0]],[1661859648,[0,0,0]],[1661859649,[0,0,0]]]);
 
 var requestsChart = new Highcharts.StockChart({
   chart: {
@@ -801,7 +779,7 @@ tooltip: { yDecimals: 0, ySuffix: '', valueDecimals: 0 }
 type: 'pie',
 name: 'Distribution',
 data: [
-  {name: 'OK', y: 0.0, color: '#68b65c'},{name: 'KO', y: 2.0, color: '#f15b4f'}
+  {name: 'OK', y: 1.0, color: '#68b65c'},{name: 'KO', y: 0.0, color: '#f15b4f'}
 ],
 center: [775, -40],
 size: 70,
@@ -879,14 +857,14 @@ type: 'scatter',
 color: '#68b65c',
 name: 'OK',
 data: [
-[]
+[1,215]
 ]},
 	  {
 type: 'scatter',
 color: '#f15b4f',
 name: 'KO',
 data: [
-[1,160],[1,166]
+[]
 ]}
 	]
 });

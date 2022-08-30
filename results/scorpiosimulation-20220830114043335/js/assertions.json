@@ -1,0 +1,10 @@
+{
+  "simulation": "ScorpioSimulation",
+  "simulationId": "scorpiosimulation-20220830114043335",
+  "start": 1661859644622,
+  "description": "newSim",
+  "scenarios": ["Entities"],
+  "assertions": [
+
+  ]
+}
