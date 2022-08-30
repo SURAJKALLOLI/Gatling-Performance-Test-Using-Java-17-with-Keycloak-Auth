@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FiwareGatling",
+            "request": "launch",
+            "mainClass": "computerdatabase.FiwareGatling",
+            "projectName": "PerfTest_7f4d5945"
+        },
+        {
+            "type": "java",
             "name": "Launch BasicSimulation",
             "request": "launch",
             "mainClass": "computerdatabase.BasicSimulation",

@@ -1,0 +1,10 @@
+{
+  "simulation": "ScorpioSimulation",
+  "simulationId": "scorpiosimulation-20220830100604662",
+  "start": 1661853965661,
+  "description": "ScorpioTestSimulation",
+  "scenarios": ["Scenario Name"],
+  "assertions": [
+
+  ]
+}
