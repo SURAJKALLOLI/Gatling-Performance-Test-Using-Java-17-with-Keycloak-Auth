@@ -43,7 +43,7 @@ public class KeycloakMultiRealm extends Simulation {
         .exec(
             http("Request Master Access Token")
                 .post(keyCloakUrl)
-                .header("Content-Type", "application/x-www-form-urlencoded")
+                .header("content-type", "application/x-www-form-urlencoded")
                 .formParam("client_id", args_client_id)
                 .formParam("username", args_username)
                 .formParam("password", args_password)
@@ -54,10 +54,10 @@ public class KeycloakMultiRealm extends Simulation {
                 .check(jsonPath("$.refresh_token").find().saveAs("refresh_token"))
         )
         .pause(1)
-
+        .exitHereIfFailed()
         .exec(
             http("#1 - Create New Realm")
-                .post("/auth/admin/realms/")
+                .post("/admin/realms/")
                 .header("Content-Type", "application/json")
                 .header("Authorization", session -> {
                     return (
@@ -82,7 +82,7 @@ public class KeycloakMultiRealm extends Simulation {
 
         .exec(
             http("#2 - Create New Realm")
-                .post("/auth/admin/realms/")
+                .post("/admin/realms/")
                 .header("Content-Type", "application/json")
                 .header("Authorization", session -> {
                     return (
