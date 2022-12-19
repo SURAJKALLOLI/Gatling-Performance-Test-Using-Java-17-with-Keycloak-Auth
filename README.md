@@ -19,6 +19,8 @@ git clone https://kmddk.visualstudio.com/KMD%20OS2IoT/_git/PerfTest
 The project structure consists of 2 Simulation classes.<br/>
 **PublisherSimulationWebhook:** The scenario is built such that a single user can send a single request.<br/>
 **PublisherSimulationWebhookMultiLoad:** The scenario is built such that a single user can send multiple requests.<br/>
+**KeycloakMultiRealm:** In this scenario, we authenticate as master keycloak user and create multiple realms in a single keycloak instance.<br/>
+**KeycloakUser:** In this scenario, we create a new realm and under that realm, we create a single client. The realm will have multiple users created, and each user will be assigned with unique ids. We also fetch the ids of users and delete all the users along with the realm.<br/>
 
 The requests include:<br/>
 **POST - Keycloak Authentication**<br/>
