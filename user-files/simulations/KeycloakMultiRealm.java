@@ -103,7 +103,31 @@ public class KeycloakMultiRealm extends Simulation {
                 }))
         )
         .pause(1)
-        .exitHereIfFailed();
+        .exitHereIfFailed()
+
+        .exec(
+            http("#3 - Delete Realm 1")
+                .delete("/admin/realms/GatlingRealm01")
+                .header("Authorization", session -> {
+                    return (
+                        (String) session.get("token_type")) + " " + ((String) session.get("access_token")
+                    );
+                })
+                .check(status().is(204))
+        )
+        .pause(1)
+
+        .exec(
+            http("#4 - Delete Realm 2")
+                .delete("/admin/realms/GatlingRealm02")
+                .header("Authorization", session -> {
+                    return (
+                        (String) session.get("token_type")) + " " + ((String) session.get("access_token")
+                    );
+                })
+                .check(status().is(204))
+        )
+        .pause(1);
     {
         setUp(
             scn.injectOpen(rampUsers(1).during(10)).protocols(httpProtocol)
