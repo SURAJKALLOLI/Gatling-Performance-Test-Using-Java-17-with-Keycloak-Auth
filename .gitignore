@@ -50,6 +50,9 @@ cmake-build-*/
 # IntelliJ
 out/
 
+# Gatling class files
+target/
+
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 

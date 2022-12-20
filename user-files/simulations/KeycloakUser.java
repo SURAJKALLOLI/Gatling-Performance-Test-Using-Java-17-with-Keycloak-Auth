@@ -69,9 +69,7 @@ public class KeycloakUser extends Simulation {
                     String newRealm = "";
                     try {
                         newRealm = "{\"enabled\":true,\"id\":\"GatlingRealm\",\"realm\":\"GatlingRealm\"}";
-                        System.out.println("\n**********NEW REALM**********");
-                        System.out.println("NewRealmReqBody:" + newRealm);
-                        System.out.println("**********NEW REALM**********\n");
+                        System.out.println("\nCREATED REALM: GatlingRealm\n");
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -94,9 +92,7 @@ public class KeycloakUser extends Simulation {
                     String newClient = "";
                     try {
                         newClient = "{\"enabled\":true,\"attributes\":{},\"clientId\":\"gatlingClient\",\"protocol\":\"openid-connect\",\"redirectUris\":[]}";
-                        System.out.println("\n**********NEW CLIENT**********");
-                        System.out.println("NewClientReqBody:" + newClient);
-                        System.out.println("**********NEW CLIENT**********\n");
+                        System.out.println("\nCREATED CLIENT: gatlingClient\n");
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -118,9 +114,7 @@ public class KeycloakUser extends Simulation {
                     String newUser = "";
                     try {
                         newUser = "{\"enabled\":true,\"attributes\":{},\"groups\":[],\"emailVerified\":\"\",\"username\":\"gatlingUser01\"}";
-                        System.out.println("\n**********USER 1**********");
-                        System.out.println("NewUserReqBody:" + newUser);
-                        System.out.println("**********USER 1**********\n");
+                        System.out.println("\nCREATED USER: gatlingUser01\n");
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -142,9 +136,7 @@ public class KeycloakUser extends Simulation {
                     String newUser = "";
                     try {
                         newUser = "{\"enabled\":true,\"attributes\":{},\"groups\":[],\"emailVerified\":\"\",\"username\":\"gatlingUser02\"}";
-                        System.out.println("\n**********USER 2**********");
-                        System.out.println("NewUserReqBody:" + newUser);
-                        System.out.println("**********USER 2**********\n");
+                        System.out.println("\nCREATED USER: gatlingUser02\n");
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -173,7 +165,7 @@ public class KeycloakUser extends Simulation {
             http("Delete User 1")
                 .delete(session -> {
                     System.out.println(
-                        "Deleted User: " +
+                        "DELETED USER: " +
                         ((String) session.get("user1_username")) +
                         " (" + ((String) session.get("user1_id")) + ")"
                     );
@@ -192,7 +184,7 @@ public class KeycloakUser extends Simulation {
             http("Delete User 2")
                 .delete(session -> {
                     System.out.println(
-                        "Deleted User: " +
+                        "DELETED USER: " +
                         ((String) session.get("user2_username")) +
                         " (" + ((String) session.get("user2_id")) + ")"
                     );
@@ -209,7 +201,10 @@ public class KeycloakUser extends Simulation {
 
         .exec(
             http("Delete Realm")
-                .delete("/admin/realms/GatlingRealm")
+                .delete(session -> {
+                    System.out.println("\nDELETED REALM: GatlingRealm\n");
+                    return "/admin/realms/GatlingRealm";
+                })
                 .header("Authorization", session -> {
                     return (
                         (String) session.get("token_type")) + " " + ((String) session.get("access_token")
