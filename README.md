@@ -14,15 +14,16 @@ git clone https://kmddk.visualstudio.com/KMD%20OS2IoT/_git/PerfTest
 ```
 2. Open the project on VScode or navigate to the `bin/` directory in root.
 3. Execute the `gatling.bat` to initiate testing.
+4. `results/` folder consists of the test report generated.
 
 # Build and Test
-The project structure consists of 2 Simulation classes.<br/>
+The project structure consists of the following Simulation scenarios mentioned below.<br/>
 **PublisherSimulationWebhook:** The scenario is built such that a single user can send a single request.<br/>
 **PublisherSimulationWebhookMultiLoad:** The scenario is built such that a single user can send multiple requests.<br/>
 **KeycloakMultiRealm:** In this scenario, we authenticate as master keycloak user and create multiple realms in a single keycloak instance.<br/>
 **KeycloakUser:** In this scenario, we create a new realm and under that realm, we create a single client. The realm will have multiple users created, and each user will be assigned with unique ids. We also fetch the ids of users and delete all the users along with the realm.<br/>
 
-The requests include:<br/>
+Scorpio requests include:<br/>
 **POST - Keycloak Authentication**<br/>
 **GET - All Entity Types**<br/>
 **GET - Webhook Token**<br/>
@@ -33,7 +34,18 @@ The requests include:<br/>
 **DELETE - Delete Entity**<br/>
 **DELETE - Delete Subscription**<br/>
 
-> **_NOTE:_** To run tests without any user interaction, run `gatling_scorpio_subscription.bat`
+Keycloak requests include:<br/>
+**POST - Request Master Access Token**<br/>
+**POST - Create Realm**<br/>
+**POST - Create Client**<br/>
+**POST - Create User**<br/>
+**GET - List Users**<br/>
+**DELETE - Delete User**<br/>
+**DELETE - Delete Realm**<br/>
+
+> **_NOTE:_** To run scorpio tests without any user interaction, run `gatling_scorpio_subscription.bat`
+
+> **_NOTE:_** To run keycloak tests without any user interaction, run `gatling_keycloak.bat`
 
 # Further Help
 To get more help on Gatling go check out the [Gatling](https://gatling.io/) official page.
