@@ -8,10 +8,7 @@ Gatling is designed for continuous load testing and integrates with your develop
 Gatling Open-Source tool can be downloaded at https://gatling.io/open-source/
 
 # Getting Started
-1. Clone the `PerfTest` repo
-```js
-git clone https://kmddk.visualstudio.com/KMD%20OS2IoT/_git/PerfTest
-```
+1. Start
 2. Open the project on VScode or navigate to the `bin/` directory in root.
 3. Execute the `gatling.bat` to initiate testing.
 4. `results/` folder consists of the test report generated.
